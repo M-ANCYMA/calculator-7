@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CALCULATOR</title>
+       
+        <style>
+            .one{border: 8px solid rgb(215, 214, 214);margin-left: 36%;margin-right: 36%;
+           border-radius: 12px;box-shadow: 0px 0px 5px 5px black}
+           input{font-size:30px;}
+           
+           .five{min-height: 50px;background-color: black;color: yellow;font-size: 20px;overflow: scroll;}
+           .two{padding-top: 100px;height: 150px;;}
+           .three{width: 60px;font-size: 35px;margin-left: 15px;border: none;border-radius: 10px;}
+           .four{background-color:  rgb(121, 117, 120); padding-bottom: 25px;border-radius: 5px;margin-top: 20px;}
+           .three:hover{box-shadow: 0px 0px 3px 3px white;}
+           @media only screen and (max-width:1600px) and (min-width:900px){
+            .one{border:8px solid rgb(215, 214, 214);
+              width:40%;height: 80%;margin-left: 0%;margin-right: 0%;
+
+            }
+            .five{min-height: 50px;background-color: black;color: yellow;font-size: 20px;overflow: scroll;}
+           .two{height: 80%;}
+           .three{width: 50px;font-size: 30px;margin-left: 15px;border: none;border-radius: 10px;}
+           .three:hover{box-shadow: 0px 0px 3px 3px white;}
+            .four{height: 351px;background-color: rgb(121, 117, 120); padding-bottom: 25px;border-radius: 5px;margin-top: 20px;}
+           }
+           @media only screen and (max-width:900px) and (min-width:700px){
+            
+            .one{width: 60%;margin-left: 0%;margin-right: 0%;
+              
+            }
+            .three{width: 30px;}
+            .two{height: 55%;}
+           }
+           @media only screen and (max-width:700px) and (min-width:400px){
+            
+            .one{
+              width: 60%;margin-left: 0%;margin-right: 0%;
+            }
+            .three{width: 38px;}
+            .two{height: 55%;}
+           }
+           
+
+           
+           
+          
+
+            </style>
+    </head>
+    <body> 
+        <center class="two">
+            
+        
+        <div class="one"><br>
+        <input type="text" class="five" id="sevens">
+       
+        
+        
+<div class="four"><br>
+        
+            <input type="submit" value="%" 
+             onclick="moms()" id="eights" class="three">&emsp13;&emsp13;
+            <input type="submit" value="(" onclick="dads()" id="nines" class="three">&emsp13;&emsp13;
+            <input type="submit" value=")" onclick="siss()" id="tens" class="three">&emsp13;&emsp13;
+           <input type="submit" value="C" onclick="bros()" id="elevens" class="three">
+            <br><br><br>
+<input type="submit" value="7"  onclick="mom()"  id="one" class="three"> &emsp13;&emsp13;
+<input type="submit" value="8"  onclick="dad()" id="two"  class="three">&emsp13;&emsp13;
+<input type="submit" value="9"   onclick="sis()" id="three"  class="three">&emsp13;&emsp13;
+<input type="submit" value="/" id="four"  onclick="bro()"  class="three"><br><br><br>
+<input type="submit" value="4" id="five"  onclick="aunty()"  class="three">&emsp13;&emsp13;
+<input type="submit" value="5" id="six"  onclick="uncle()"  class="three">&emsp13;&emsp13;
+<input type="submit" value="6" id="seven"  onclick="cow()"  class="three">&emsp13;&emsp13;
+<input type="submit" value="*" id="eight"  onclick="hen()"  class="three"><br><br><br>
+<input type="submit" value="1" id="nine"  onclick="cat()"  class="three">&emsp13;&emsp13;
+<input type="submit" value="2" id="ten"  onclick="crow()"  class="three">&emsp13;&emsp13;
+<input type="submit" value="3" id="ones"  onclick="dove()"  class="three">&emsp13;&emsp13;
+<input type="submit" value="-" id="twos"  onclick="lion()"  class="three"><br><br><br>
+<input type="submit" value="0" id="threes"  onclick="tiger()"  class="three">&emsp13;&emsp13;
+<input type="submit" value="." id="fours"  onclick="goat()"  class="three">&emsp13;&emsp13;
+<input type="submit" value="=" onclick="monkey()" id="fives"  class="three">&emsp13;&emsp13;
+
+<input type="submit" value="+" id="sixs"  onclick="duck()"  class="three">
+
+
+        </div>
+      </div>
+     
+        
+    </center>
+    </body>
+    <script>
+      d=""
+        
+      function mom()
+      {
+        d=d+"7"
+    document.getElementById("sevens").value=d
+      }
+      function dad()
+      {
+        d=d+"8"
+        document.getElementById("sevens").value=d
+      }
+      function sis()
+      {
+        d=d+"9"
+        document.getElementById("sevens").value=d
+      }
+      function bro()
+      {
+        d=d+"/"
+        document.getElementById("sevens").value=d
+      }
+      function aunty()
+      {
+        d=d+"4"
+        document.getElementById("sevens").value=d
+      }
+      function uncle()
+      {
+        d=d+"5"
+        document.getElementById("sevens").value=d
+      }
+      function cow()
+      {
+        d=d+"6"
+        document.getElementById("sevens").value=d
+      }
+      function hen()
+      {
+        d=d+"*"
+        document.getElementById("sevens").value=d
+      }
+      function cat()
+      {
+        d=d+"1"
+        document.getElementById("sevens").value=d
+      }
+      function crow()
+      {
+        d=d+"2"
+        document.getElementById("sevens").value=d
+      }
+      function dove()
+      {
+        d=d+"3"
+        document.getElementById("sevens").value=d
+      }
+      function lion()
+      {
+        d=d+"-"
+        document.getElementById("sevens").value=d
+      }
+      function tiger()
+      {
+        d=d+"0"
+        document.getElementById("sevens").value=d
+      }
+      function goat()
+      {
+        d=d+"."
+        document.getElementById("sevens").value=d
+      }
+      function monkey()
+      {
+        d=eval(d)
+        document.getElementById("sevens").value=d
+      }
+      function duck()
+      {
+        d=d+"+"
+        document.getElementById("sevens").value=d
+      }
+      
+      function moms()
+      {
+        d=d+"%"
+        document.getElementById("sevens").value=d
+      }
+      function dads()
+      {
+        d=d+"("
+        document.getElementById("sevens").value=d
+      }
+      function siss()
+      {
+        d=d+")"
+        document.getElementById("sevens").value=d
+      }
+      function bros()
+      {
+        d=""
+    document.getElementById("sevens").value=d
+
+      }
+      
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+
+
+           
+        
+      
+
+    </script>
+
+</html>
